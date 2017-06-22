@@ -82,5 +82,5 @@ function constructResponse(request, response) {
 }
 
 var http = require("http");
-http.createServer(constructResponse).listen(8081);
-console.log('Server running at http://127.0.0.1:8081/');
+http.createServer(constructResponse).listen(80);
+console.log('Server running');

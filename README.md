@@ -27,3 +27,7 @@ A simple url shortcut / redirect service using Node.js
 * Created a basic Node.js HTTP server
 * Set up redirections based on hardcoded shortcuts
 * Created an sqlite3 database to store shortcuts
+
+## 2017-06-22
+
+* Used setcap 'cap_net_bind_service=+ep' /use/bin/nodejs to allow node to serve port 80
