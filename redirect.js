@@ -2,9 +2,12 @@ function printRedirectTable(redirectTable) {
   var foo;
   foo = "<table border=1 cellpadding=5 style=\"border-collapse: collapse;\">";
   for (var shortName in redirectTable) {
+    var linkURL = redirectTable[shortName]
+    linkURL = "<a href=\"" + linkURL + "\">" + linkURL + "</a>"
+    
     foo += "<tr>";
     foo += "<td>" + shortName + "</td>";
-    foo += "<td>" + redirectTable[shortName] + "</td>"
+    foo += "<td>" + linkURL + "</td>"
     foo += "</tr>";
   }
   foo += "</table>";
