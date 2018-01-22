@@ -13,6 +13,10 @@ A simple url shortcut / redirect service using Node.js
 * Set up some performance tests and visualize stats
 * Set up real time server monitoring and visualize stats
 
+## Rebuild docker image
+
+docker build -t mparkola/redirect .
+
 # Development Log
 
 ## 2018-01-22 Monday
